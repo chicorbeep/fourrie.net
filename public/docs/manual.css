@@ -3,7 +3,9 @@
 	--text-color: #fff;
 	--accent-pri: #ff8ec2;
 	--accent-sec: salmon;
+	--accent-tri: #f5cc44;
 	--table-light: oklch(from var(--background) calc(l + 0.2) c h);
+	--text-light: color-mix(in oklch, var(--text-color),var(--background));
 }
 
 body {
@@ -16,6 +18,18 @@ body {
 	}
 }
 
+hr {
+	border: 1px solid var(--text-color);
+}
+
+small {
+	color: var(--text-light);
+}
+
+*:not(img)[title] {
+	cursor: help;
+}
+
 h2,
 h3,
 h4 {
@@ -25,6 +39,7 @@ h4 {
 	align-items: center;
 	border-bottom: 2px solid;
 	white-space: pre;
+	clear: both;
 }
 
 h2 {
@@ -57,11 +72,21 @@ section-num,
 
 doc-notice {
 	display: block;
-	outline: 2px solid var(--table-light);
-	border-left: 10px solid var(--table-light);
+	border: 2px solid var(--table-light);
+	border-left-width: 10px;
 	padding: 1em;
 	margin: 1em;
-	line-height: 1.2;
+	line-height: 1.5;
+
+	& strong {
+		display: block;
+		color: var(--accent-tri);
+		line-height: 1.2;
+	}
+
+	&.caution {
+		border-color: var(--accent-tri);
+	}
  
 }
 
@@ -95,6 +120,35 @@ header {
 	font-weight: bold;
 	color: var(--accent-sec);
 }
+
+.preferences {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+fieldset {
+	border: 1px solid;
+}	
+
+figure  {
+	float: right;
+	margin: 4px;
+	border: 1px solid var(--table-light);
+	padding: 8px;
+
+	& img {
+		border: 1px solid var(--table-light);
+	}
+
+	& figcaption {
+		line-height: 1.2;
+		display: table-caption;
+		width: 100%;
+	}
+}
+
+
+
 
 ul,
 ol {
@@ -134,6 +188,7 @@ table {
 	width: 100%;
 	border-collapse: collapse;
 	border: 2px solid var(--table-light);
+	table-layout: fixed;
 
 	& th,
 	& td {
@@ -147,9 +202,11 @@ table {
 	}
 }
 
-#datasheet td {
+.two-col td {
 	text-align: center;
 }
+
+
 
 .preserve-case,
 section-num,
