@@ -62,7 +62,7 @@ html {
 body {
 	background: #270010;
 	text-align: center;
-	font-size: 26px;
+	font-size: 24px;
 	position: absolute;
 	inset: 0;
 	margin: 0;
@@ -103,12 +103,12 @@ body {
 	font-size: 1.6em;
 	text-transform: lowercase;
 	font-family: "Atkinson Hyperlegible Mono", monospace;
-	animation: 
-		background-scroll 10s linear 0s infinite;
+	animation: background-scroll 10s linear 0s infinite;
 	background: url(/img/prophecy.png);
 	filter: brightness(2);
 	background-clip: text;
 	color: transparent;
+	width: 20em;
 }
 
 .pr404 {
@@ -176,13 +176,27 @@ a:active {
 .music {
 	position: absolute;
 	bottom: 1em;
-
+	display: flex;
+	flex-direction: column-reverse;
+	& p {
+		font-size: 16px;
+		margin: 0;
+	}
+ 
 	& audio {
 		box-shadow: none;
 		--media-background: transparent;
 		width: min(90vw, 500px);
+		opacity: 0.3;
+		transition: 400ms;
+		&:hover {
+			opacity: 1;
+			
+		}
 	}
+
 }
+
 
 @media (max-width: 900px) {
 	body {
@@ -197,7 +211,9 @@ a:active {
 	}
 
 	.music {
+		flex-direction: column;
 		top: 1em;
+		bottom: unset;
 	}
 
 }

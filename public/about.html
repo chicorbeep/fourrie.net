@@ -8,96 +8,95 @@
 		<link href="/style.css" rel="stylesheet" type="text/css" media="all" title="Default">
 		<style>
 
-            #listening {
-                background-color: #320303;
-                padding: 8px 8px 8px 80px;
-                position: relative;
-                min-height: 64px;
-                max-width: 320px;
-            }
+			#listening {
+				background-color: #320303;
+				padding: 8px 8px 8px 80px;
+				position: relative;
+				min-height: 64px;
+				max-width: 320px;
+			}
 
-            #listening h3 {
-                margin: 0;
-                line-height: 0.9;
-            }
-            
-            #listening p {
-                margin: 0;
-            }
+			#listening h3 {
+				margin: 0;
+				line-height: 0.9;
+			}
+			
+			#listening p {
+				margin: 0;
+			}
 
-            #listening img {
-                position: absolute;
-                top: 8px;
-                left: 8px;
-            }
+			#listening img {
+				position: absolute;
+				top: 8px;
+				left: 8px;
+			}
 
 
 
 		</style>
 
-        <noscript>
-            <style>
-                #listening, #listening-msg {
-                    display: none;
-                }
-            </style>
-        </noscript>
+		<noscript>
+			<style>
+				#listening, #listening-msg {
+					display: none;
+				}
+			</style>
+		</noscript>
 	</head>
 
 	<body>
 
-
-
+			<a href="/" class="home">« back</a>
 	
 			<h1>about</h1>
 			
-            <p>It's a girl of some sort</p>
+			<p>It's a girl of some sort</p>
 
 
-            <h3 id="listening-msg"></h3>
-            <div id="listening"></div>
+			<h3 id="listening-msg"></h3>
+			<div id="listening"></div>
 
-            <script>
-                // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
+			<script>
+				// this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
 
-                const USERNAME = "c74e"; // Put your LastFM username here
-                const BASE_URL = `https://lastfm-last-played.biancarosa.com.br/${USERNAME}/latest-song`;
+				const USERNAME = "c74e"; // Put your LastFM username here
+				const BASE_URL = `https://lastfm-last-played.biancarosa.com.br/${USERNAME}/latest-song`;
 
-                const getTrack = async () => {
-                    const request = await fetch(BASE_URL);
-                    const json = await request.json();
-                    let status
+				const getTrack = async () => {
+					const request = await fetch(BASE_URL);
+					const json = await request.json();
+					let status
 
-                    let isPlaying = json.track['@attr']?.nowplaying || false;
+					let isPlaying = json.track['@attr']?.nowplaying || false;
 
-                    if(!isPlaying) {
+					if(!isPlaying) {
 
-                        document.getElementById("listening-msg").innerText = "Last played";
-                        document.getElementById("listening").innerHTML = `
-                        <img src="${json.track.image[1]['#text']}">
-                        <div id="trackInfo">
-                        <h3 id="trackName">${json.track.name}</h3>
-                        <p id="artistName">${json.track.artist['#text']}</p>
-                        </div>
-                        `
-                        return;
-                    } else {
-                        // Trigger if a song is playing
-                    }
+						document.getElementById("listening-msg").innerText = "Last played";
+						document.getElementById("listening").innerHTML = `
+						<img src="${json.track.image[1]['#text']}">
+						<div id="trackInfo">
+						<h3 id="trackName">${json.track.name}</h3>
+						<p id="artistName">${json.track.artist['#text']}</p>
+						</div>
+						`
+						return;
+					} else {
+						// Trigger if a song is playing
+					}
 
-                    document.getElementById("listening-msg").innerText = "Currently playing";
-                    document.getElementById("listening").innerHTML = `
-                    <img src="${json.track.image[1]['#text']}">
-                    <div id="trackInfo">
-                    <h3 id="trackName">${json.track.name}</h3>
-                    <p id="artistName">${json.track.artist['#text']}</p>
-                    </div>
-                    `
-                };
+					document.getElementById("listening-msg").innerText = "Currently playing";
+					document.getElementById("listening").innerHTML = `
+					<img src="${json.track.image[1]['#text']}">
+					<div id="trackInfo">
+					<h3 id="trackName">${json.track.name}</h3>
+					<p id="artistName">${json.track.artist['#text']}</p>
+					</div>
+					`
+				};
 
-                getTrack();
-                setInterval(() => { getTrack(); }, 30000);
-                </script>
+				getTrack();
+				setInterval(() => { getTrack(); }, 30000);
+				</script>
 	</body>
 
 

@@ -1,78 +1,75 @@
-/* beep! why look here? */
+
 
 .site-box {
-    text-align: left;
-    background: #681637;
-    font-size: 13px;
-    padding: 16px;
-    line-height: 0.7;
-    box-shadow: 0 0 5px #681637;
+	text-align: left;
+	background: #681637;
+	font-size: 13px;
+	padding: 16px;
+	line-height: 0.7;
+	box-shadow: 0 0 5px #681637;
 }
 
 .site-box:hover {
-    box-shadow: 0 0 10px #681637;
+	box-shadow: 0 0 10px #681637;
 }
 
 .site-box>a {
-    display: block;
-    font-weight: normal;
+	display: block;
+	font-weight: normal;
 }
 
 .site-box>a>p {
-    color: salmon;
-    font-size: 26px;
-    text-shadow: 0 0 5px;
-    font-weight: normal;
-    line-height: 28px;
-    margin: 0;
+	color: salmon;
+	font-size: 26px;
+	text-shadow: 0 0 5px;
+	font-weight: normal;
+	line-height: 28px;
+	margin: 0;
 }
 
 .site-box>a>span {
-    color: #F7A673;
+	color: #F7A673;
 }
 
 .site-box>a>p>span.follow {
-    color: #FAC472;
-    font-size: 13px;
+	color: #FAC472;
+	font-size: 13px;
 }
 
 .site-box>a>.sitefeature {
-    margin: 0;
-    height: 131px;
-    background: none;
-    border: 2px solid white;
-    box-shadow: 3px 3px black
+	margin: 0;
+	height: 131px;
+	background: none;
+	border: 2px solid white;
+	box-shadow: 3px 3px black
 }
 
 .site-box::after {
-    display: inline-block;
-    content: url(https://aeolian51.nekoweb.org/c74e.fyi/img/profile.png);
-    transform: scale(0.667);
-    position: relative;
-    top: -210px;
-    right: -85px;
-    image-rendering: pixelated;
+	display: inline-block;
+	content: url(https://chicorbeep.nekoweb.org/c74e.fyi/img/profile.png);
+	transform: scale(0.667);
+	position: relative;
+	top: -210px;
+	right: -85px;
+	image-rendering: pixelated;
 }
 
 .site-box:hover::after {
-    content: url(https://aeolian51.nekoweb.org/c74e.fyi/img/profile2.png);
+	content: url(https://chicorbeep.nekoweb.org/c74e.fyi/img/profile2.png);
 }
 
-
-/* postman pat, postman pat, postman pat and his black and white cat! */
-
 .post-box {
-    background-color: #fff2cc;
-    border: 4px solid #ecbfa6;
-    padding: 15px;
-    border-radius: 5px;
-    color: #634c53;
-    font-weight: normal;
+	background-color: #fff2cc;
+	border: 4px solid #ecbfa6;
+	padding: 15px;
+	border-radius: 5px;
+	color: #634c53;
+	font-weight: normal;
 }
 
 .post-box .post-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 0px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 0px;
 }

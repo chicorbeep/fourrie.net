@@ -17,7 +17,7 @@
 		<data data-type="dollcode" value="51022">▘▖▖▌▘▘▘▖▌▖</data>
 		<h1 class="title">the <u-id data-type="short">0xC74E</u-id> operating manual</h1>
 		<p>documentation on the robot <u-id data-type="full">0xC74E ‘chicory’</u-id></p>
-		<p class="updated"><data value="0.1.0">v0.1.0-pre</data> · last updated <time>2025-11-06</time></p>
+		<p class="updated"><data value="0.1.0">v0.1.0-pre</data> · last updated <time>2025-11-08</time></p>
 	</header>
 
 	<doc-notice class="caution">
@@ -34,8 +34,7 @@
 					<li>Foreword</li>
 					<li>Purpose of this Manual</li>
 					<li>Conventions</li>
-					<li>Definitions</li>
-					<li>Preferences</li>
+					<li>Safety Considerations</li>
 				</ol>
 			</li>
 			<li>
@@ -43,14 +42,18 @@
 				<ol>
 					<li>What is <u-id>0xC74E</u-id>?</li>
 					<li>Datasheets</li>
+					<li>Addressing <u-id>0xC74E</u-id></li>
 				</ol>
 			</li>
 			<li><a href="#operation">Operation</a></li>
 			<li><a href="#comms">Communication</a></li>
-			<li value="1" class="appendix"><a href="#changelog">Changelog</a></li>
+			<li value="1" class="appendix"><a href="#glossary">Glossary</a></li>
+			<li value="2" class="appendix"><a href="#changelog">Changelog</a></li>
 		</ol>
 		
 	</nav>
+ 
+	<hr>
 
 	<main>
 		<section id="preface">
@@ -91,31 +94,25 @@
 			<div class="preferences">
 				<fieldset>
 					<legend>Style-based</legend>
-					<input id="lower" type="checkbox" checked> <label for="lower">disable capitalization</label> 
+					<input id="lower" type="checkbox" checked> <label for="lower">Disable capitalization</label> 
 				</fieldset>
 
 				<fieldset class="js">
 					<legend>JavaScript required</legend>
+					<input>
 				</fieldset>
 			</div>
-			<small>These settings are saved with JavaScript!</small>
+			<small>These settings are saved with JavaScript enabled!</small>
 			<noscript><style>.js{opacity: 0.5;}</style></noscript>
 
 
-			<h3><section-num>0.3</section-num> Definitions</h3>
-			<dl>
-				<dt>Party</dt>
-				<dd>The concept of grammatical person. (e.g. <em>third party perspective</em>, refers to third person perspective)</dd>
-				<dt>Placeholders</dt>
-				<dd>Denoted with curly braces. For example, {color} represents any color.</dd>
-				<dt>Arrays</dt> 
-				<dd>Denoted by square brackets. Similar in semantic meaning to lists, but slightly more versatile.<br><em>[a, b, c]</em> is identical in meaning to <em>a, b, and/or c.</em></dd>
-			</dl>
+		
+			
 
-			<h3><section-num>0.4</section-num> Safety Considerations</h3>
+			<h3><section-num>0.3</section-num> Safety Considerations</h3>
 			<ul>
 				<li>Do not expose to paradoxes (mainly logical contradictions). It doesn't like them.</li>
-				<li>Do not the <u-id data-type="name">chicory</u-id>.</li>
+				<li>Do not the <u-id data-type="name">Chicory</u-id>.</li>
 			</ul>
 			
 		</section>
@@ -152,11 +149,11 @@
 					</tr>
 					<tr>
 						<th scope="row">Pronouns</th> <!--thyé re making the robots woke!!!!!1!-->
-						<td>[it/its<sup title="third or first party perspectives">3/1</sup>, she/her<sup title="first party perspective">1</sup>]</td>
+						<td>[it/its<sup title="third or first person perspectives">3/1</sup>, she/her<sup title="first person perspective">1</sup>]</td>
 					</tr>					
 					<tr>
 						<th scope="row">Gender</th>
-						<td><pride-gradient data-flag="transgender">transgender</pride-gradient> <pride-gradient data-flag="enby">nonbinary</pride-gradient> <pride-gradient data-flag="robotkin">robot</pride-gradient></td>
+						<td><pride-gradient data-flag="transgender">transgender</pride-gradient> <pride-gradient data-flag="robotkin">robot</pride-gradient><span style="color: #f5a9b8;">girl</span></td>
 					</tr>
 					<tr>
 						<th scope="row">Relationship Orientation</th>
@@ -164,17 +161,17 @@
 					</tr>
 					<tr>
 						<th scope="row">Version</th>
-						<td><data value="0.1.0">0.1.0</data></td>
+						<td><data>0.1.0</data></td>
 					</tr>
 					<tr>
 						<th scope="row">Operating System</th>
-						<td class="preserve-case">reverieOS <data value="0.19.0">0.19.0</data></td>
+						<td class="preserve-case">reverieOS <data>0.20.2</data></td>
 					</tr>
 				</tbody>
 			</table>
 			<h4><section-num>1.2.2</section-num> Dimensional Information</h4>
 				<doc-notice class="caution">
-					<strong>Currently incomplete.</strong> It needs to find its anthropomorphic measurments when possible.
+					<strong>Currently incomplete.</strong> It needs to find its anthropomorphic measurements when possible.
 				</doc-notice>
 				<!--i-->
 				<table class="two-col">
@@ -257,10 +254,26 @@
 
 		<hr>
 
-		<section id="changelog">
-			<h2><section-num>A</section-num> Changelog</h2>
+		<section id="glossary">
+			<h2><section-num>A</section-num> Glossary</h2>
+			<dl>
+				<dt>Placeholders</dt>
+				<dd>Denoted with curly braces. For example, {color} represents any color.</dd>
+				<dt>Arrays</dt> 
+				<dd>Denoted by square brackets. Similar in semantic meaning to lists, but slightly more versatile.<br><em>[a, b, c]</em> is identical in meaning to <em>a, b, and/or c.</em></dd>
+			</dl>
+		
+		</section>
 
-				<p>Version numbers follow <a href="https://pridever.org/"><pride-gradient data-flag="pride">pride</pride-gradient> versioning</a>.</p>
+
+
+
+
+
+		<section id="changelog">
+			<h2><section-num>B</section-num> Changelog</h2>
+
+				<p>Version numbers follow <a href="https://pridever.org/" target="_blank"><pride-gradient data-flag="pride">pride</pride-gradient> versioning</a>.</p>
 
 				<h3><section-num>v0.1.0</section-num> Initial HTML version <time>2025-??-??</time></h3>
 				
