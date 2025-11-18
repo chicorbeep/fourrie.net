@@ -36,7 +36,34 @@ u-id[data-type="name"] {
 	font-family: "Atkinson Hyperlegible Next", sans-serif;
 }
 
-@import url(/flags.css);
+pride-gradient[data-flag="pride"] {
+	background: linear-gradient(90deg in oklch, #f35b57, #f7a451, #f3da55,  #8fd860, #7093ff, #be7dff);
+}
+
+pride-gradient[data-flag="transgender"], .trans {
+	background: linear-gradient(90deg in oklch, #5bcefa, #f5a9b8, #fff,  #f5a9b8, #5bcefa);
+}
+
+pride-gradient[data-flag="transfem"] {
+	background: linear-gradient(90deg in oklch, #5bcefa, #f7dae6, #f7afcf, #f688b9, #f7afcf, #f7dae6, #5bcefa);
+}
+
+pride-gradient[data-flag="enby"] {
+	background: linear-gradient(90deg in oklch, #FFF433, #FFF8E7, #9B59D0,  #7f7f7f);
+}
+
+pride-gradient[data-flag="robotkin"] {
+	background: linear-gradient(90deg in oklch, #fff, #f21c00, #53ee00,  #3b8aff, #7f7f7f);
+}
+
+pride-gradient[data-flag="aroace"] {
+	background: linear-gradient(90deg in oklch, #da8b00, #e8cc00, #ffffff,  #6fafdf, #5482ca);
+}
+
+pride-gradient[data-flag], .trans {
+	background-clip: text;
+	color: transparent;
+}
 
 
 .buttons img, .buttons {
