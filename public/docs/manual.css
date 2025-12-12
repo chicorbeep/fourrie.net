@@ -10,7 +10,7 @@
 
 
 body {
-	background-color: var(--background);
+	background: var(--background);
 	color: var(--text-color);
 	line-height: 1.7;
 	max-width: 50em;
