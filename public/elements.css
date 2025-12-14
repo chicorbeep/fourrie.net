@@ -46,7 +46,7 @@
 
 .site-box::after {
 	display: inline-block;
-	content: url(https://chicorbeep.nekoweb.org/c74e.fyi/img/profile.png);
+	content: url(https://chicorbeep.nekoweb.org/c74e.fyi/assets/img/profile.png);
 	transform: scale(0.667);
 	position: relative;
 	top: -210px;
@@ -55,7 +55,7 @@
 }
 
 .site-box:hover::after {
-	content: url(https://chicorbeep.nekoweb.org/c74e.fyi/img/profile2.png);
+	content: url(https://chicorbeep.nekoweb.org/c74e.fyi/assets/img/profile2.png);
 }
 
 .post-box {

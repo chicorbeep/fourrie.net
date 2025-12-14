@@ -42,7 +42,7 @@ body:has(#print:checked) {
     }
 
     header {
-        background: url(/img/emblem_clean.svg) no-repeat calc(100% + 48px) 72px/256px #ffffff;
+        background: url(/assets/img/emblem_clean.svg) no-repeat calc(100% + 48px) 72px/256px #ffffff;
         padding: 0;
         height: 100%;
 

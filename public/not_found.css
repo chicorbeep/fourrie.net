@@ -82,7 +82,7 @@ body {
 }
 
 .bg {
-	background: url(/img/prophecy.png);
+	background: url(/assets/img/prophecy.png);
 	animation: background-scroll 20s linear 0s infinite;
 	filter:  contrast(0.5) brightness(0.3) saturate(2) ;
 	z-index: -10;
@@ -104,7 +104,7 @@ body {
 	text-transform: lowercase;
 	font-family: "Atkinson Hyperlegible Mono", monospace;
 	animation: background-scroll 10s linear 0s infinite;
-	background: url(/img/prophecy.png);
+	background: url(/assets/img/prophecy.png);
 	filter: brightness(2);
 	background-clip: text;
 	color: transparent;
@@ -123,7 +123,7 @@ body {
 	&::before {
 		content: "404";
 		margin: auto;
-		background: url(/img/prophecy.png);
+		background: url(/assets/img/prophecy.png);
 		background-clip: text;
 		color: #0000;
 		animation: 
@@ -138,7 +138,7 @@ body {
 		inset: -10px;
 		
 		z-index: -2;
-		background: url(/img/prophecy.png);
+		background: url(/assets/img/prophecy.png);
 		background-clip: text;
 		animation: 
 			prophecy-shadows 3s ease-in-out 0s infinite,

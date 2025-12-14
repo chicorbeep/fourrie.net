@@ -35,32 +35,32 @@ body {
 			}
 
 			&[flag="pride"]::before {
-				content: url(/img/flags/xx-pride-lgbt-progress.svg);
+				content: url(/assets/img/flags/xx-pride-lgbt-progress.svg);
 
 			}
 
 			&[flag="transgender"]::before {
-				content: url(/img/flags/xx-pride-trans.svg);
+				content: url(/assets/img/flags/xx-pride-trans.svg);
 			}
 
 			&[flag="transfem"]::before {
-				content: url(/img/flags/xx-pride-transfeminine.svg);
+				content: url(/assets/img/flags/xx-pride-transfeminine.svg);
 			}
 
 			&[flag="enby"]::before {
-				content: url(/img/flags/xx-pride-nonbinary.svg);
+				content: url(/assets/img/flags/xx-pride-nonbinary.svg);
 			}
 
 			&[flag="robotkin"]::before, &[flag="robotkin-stepped"]::before {
-				content: url(/img/flags/xx-robotkin.svg);
+				content: url(/assets/img/flags/xx-robotkin.svg);
 			}
 
 			&[flag="aroace"]::before {
-				content: url(/img/flags/xx-pride-aroace.svg);
+				content: url(/assets/img/flags/xx-pride-aroace.svg);
 			}
 
 			&[flag="plural"]::before {
-				content: url(/img/flags/xx-plurality.svg);
+				content: url(/assets/img/flags/xx-plurality.svg);
 			}
 		}
 	}
@@ -154,7 +154,7 @@ h4 {
 
 
 header {
-	background: url(/img/emblem_clean.svg) no-repeat calc(100% + 48px) 72px/256px #3c071b;
+	background: url(/assets/img/emblem_clean.svg) no-repeat calc(100% + 48px) 72px/256px #3c071b;
 	padding: 4em 3em 3em;
 	min-height: 128px;
 	position: relative;
