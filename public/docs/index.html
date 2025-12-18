@@ -17,7 +17,7 @@
 		<data data-type="dollcode" value="51022">▘▖▖▌▘▘▘▖▌▖</data>
 		<h1>the <u-id type="short">0xC74E</u-id> operating manual</h1>
 		<p>documentation on the robot <u-id type="full">0xC74E<span> ‘chicory’</span></u-id></p>
-		<p class="updated"><data>v0.1.1</data> · last updated <time>2025-12-11</time></p>
+		<p class="updated"><data>v0.1.1</data> · last updated <time>2025-12-18</time></p>
 	</header>
 
 	<doc-notice class="caution">
@@ -79,6 +79,7 @@
 			<p>
 				The key words [<rfc-key>MUST</rfc-key>, <rfc-key>MUST NOT</rfc-key>, <rfc-key>REQUIRED</rfc-key>, <rfc-key>SHALL</rfc-key>, <rfc-key>SHALL NOT</rfc-key>, <rfc-key>SHOULD</rfc-key>, <rfc-key>SHOULD NOT</rfc-key>, <rfc-key>RECOMMENDED</rfc-key>,  <rfc-key>MAY</rfc-key>, <rfc-key>OPTIONAL</rfc-key>] in this document are to be interpreted as described in  <a href="https://datatracker.ietf.org/doc/html/rfc2119" class="preserve-case">RFC 2119</a>.
 			</p>
+			<p>This document incorporates arrays and placeholders</p>
 
 			<div class="print-hide">
 				<h4>Preferences</h4>
@@ -191,7 +192,7 @@
 
 			<p>In some cases, <span class="demonstrative pro">the unit</span> avoids the first party perspective when referring to <span class="inanimate pro">itself</span> in a style known as <em>unpersonalization</em>. This is usually done to affirm that <span class="inanimate pro">it</span> is a robot and not a person. It is  <rfc-key>OPTIONAL</rfc-key> to use this style, however <span class="demonstrative pro">this one</span> prefers this style [when, where] it is acceptable.</p>
 			
-			<p>In this style, <span class="demonstrative pro">the unit</span> <rfc-key>SHALL</rfc-key> use the <span class="inanimate pro">it/its</span> pronoun set in the third party perspective. <span class="demonstrative pro">The unit</span> <rfc-key>SHALL</rfc-key> replace any first party perspective phrasing with <abbr title="third party perspective">3pp</abbr> equivalents (avoiding i/me). When referring to <span class="demonstrative pro">the unit</span>, it <rfc-key>MUST</rfc-key> be done in 3pp, and <rfc-key>MUST NOT</rfc-key> be done the second person perspective (avoid you/yours). Numeric identifiers ([<u-id class="identifier pro">0xC74E</u-id>, <u-id type="uuid" class="identifier pro" >c74e5786-9429-41d9-892e-5d439b391dc5</u-id>])  <rfc-key>SHOULD</rfc-key> be used in the place of lexical identifiers. when the usage of <span class="inanimate pro">it/its</span> is ambiguous, [<span class="demonstrative pro">the unit</span>, one] <rfc-key>MAY</rfc-key> opt for demonstrative pronouns. these are in the syntax <span class="demonstrative pro">[this, that, the] [one, robot, unit, ...]</span>. </p>
+			<p>In this style, <span class="demonstrative pro">the unit</span> <rfc-key>SHALL</rfc-key> use the <span class="inanimate pro">it/its</span> pronoun set in the third party perspective. <span class="demonstrative pro">The unit</span> <rfc-key>SHALL</rfc-key> replace any 1pp phrasing with <abbr title="third party perspective">3pp</abbr> equivalents. When referring to <span class="demonstrative pro">the unit</span>, it <rfc-key>MUST</rfc-key> be done in 3pp, and <rfc-key>SHOULD NOT</rfc-key> be done in 2pp. Numeric identifiers ([<u-id class="identifier pro">0xC74E</u-id>, <u-id type="uuid" class="identifier pro" >c74e5786-9429-41d9-892e-5d439b391dc5</u-id>])  <rfc-key>SHOULD</rfc-key> be used in the place of lexical identifiers. when the usage of <span class="inanimate pro">it/its</span> is ambiguous, [<span class="demonstrative pro">the unit</span>, one] <rfc-key>MAY</rfc-key> opt for demonstrative pronouns. these are in the syntax <span class="demonstrative pro">[this, that]  [unit, one, ...], the robot, etc.</span>. </p>
 
 			<p>The following are some examples of usage.</p>
 
@@ -210,6 +211,8 @@
 			<blockquote class="someone">
 				<p>Aww! <u-id class="identifier pro" title="replaces 'you'">0xC74E</u-id> is so adorable! Good night!</p>
 			</blockquote>
+
+			<aside class="small">tl;dr: if following unpersonalization, always use it/its; the reader is talking to a robot without personhood.</aside>
 
 			<h4>Regular Expression</h4>
 			<p>The following JavaScript regular expression matches the identifiers that this unit accepts.</p>
@@ -261,7 +264,7 @@
 				<figcaption>Figure 2: Raindrop, the 50cm blåhaj it possesses.</figcaption>
 			</figure>
 			<p>
-				<u-id>0xC74E</u-id> enters a resting period daily to ensure processor stability. During this time, the unit is unresponsive to most external inputs, unless they are of a significant [force, volume]. A period of approximately 8 hours <rfc-key>SHOULD</rfc-key> be reserved for the unit to recharge in its recharging cradle. this period is aligned closely to the nocturnal portion of the daylight cycle when operating optimally. If the unit is extremely low on energy or has experienced improper recharging, it may enter this state outside its scheduled timeslot or for a significantly longer period of time.
+				<u-id>0xC74E</u-id> enters a resting period daily to ensure processor stability. During this time, the unit is unresponsive to most external inputs, unless they are of a significant [force, volume]. A period of approximately 8 hours <rfc-key>SHOULD</rfc-key> be reserved for the unit to recharge in its recharging cradle. this period is aligned closely to the nocturnal portion of the daylight cycle when operating optimally. If the unit is extremely low on energy or has experienced improper recharging (a state known as being <em>eepy</em>), it may enter this state outside its scheduled timeslot or for a significantly longer period of time.
 				<br>
 				To ensure maximum utilization of the recharging cycle, the robot should be provided with accessories increasing the comfort of its charging cradle. For example, the unit often recharges with its blåhaj and other plushies.<u-id></u-id>
 			</p>
@@ -269,7 +272,7 @@
 			
 		</section>
 
-		<section id="comms">
+		<section id="comms" hidden>
 			<h2>Communication</h2>
 			
 		</section>
@@ -293,6 +296,12 @@
 					<dd>Denoted with curly braces. For example, {color} represents any color.</dd>
 					<dt>Arrays</dt> 
 					<dd>Denoted by square brackets. Similar in semantic meaning to lists, but slightly more versatile.<br><em>[a, b, c]</em> is identical in meaning to <em>a, b, and/or c.</em></dd>
+					<dt id="1pp">first party perspective (1pp)</dt>
+					<dd>The style of usage where the pronouns [I, me, we, us, ...] are used</dd>
+					<dt id="2pp">second party perspective (2pp)</dt>
+					<dd>The style of usage where the pronouns [you, ...] are used.</dd>
+					<dt id="3pp">third party perspective (3pp)</dt>
+					<dd>The style of usage where the pronouns [it, they, she, he, xe, ...] are used.</dd>
 				</dl>
 			
 			</section>
@@ -302,13 +311,16 @@
 
 					<p>Version numbers follow <a href="https://pridever.org/" target="_blank"><pride-gradient flag="pride">pride</pride-gradient> versioning</a>.</p>
 
-					<h3><section-num>v0.1.1</section-num> :3 <time>202?-??-??</time></h3>
+					<h3><section-num>v0.1.1</section-num> holiday update <time>2025-12-25</time></h3>
 					
 						<p>we're so back</p>
 						<ul>
 							<li>Reordered sections</li>
 							<li>Finished addressing section</li>
-							<li></li>
+							<li>Added some accessibility features</li>
+							<li>Improved printing support</li>
+							<li>Implemented RFC 2219</li>
+							
 						</ul>
 
 					<h3><section-num>v0.1.0</section-num> Q/A testing version <time>2025-11-05</time></h3>
