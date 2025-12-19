@@ -2,13 +2,15 @@ body {
 	background: center/1px 4px linear-gradient(#1d050e 50%, #350114 50%);
 
 	color: white;
-	font-family: "Atkinson Hyperlegible Next", sans-serif;
+	font-family: "Cozette", "Atkinson Hyperlegible Next", sans-serif;
 	margin: auto;
-	max-width: 960px;
-	padding: 0 16px;
 	color-scheme: dark;
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	max-width: none;
 }
+
 
 a {
 	color: #FF9999;
@@ -90,7 +92,108 @@ pride-gradient[flag],
 	color: transparent;
 }
 
+.nav-banner {
+	width: 100dvw;
+	background: linear-gradient(90deg, #201 50%, #402 50%);
+	border: 3px double #a05;
+	border-width: 3px 0;
+	margin: 4px 0;
 
+	nav {
+		margin: auto;
+		max-width: 960px;
+		font-size: 14px;
+		line-height: 14px;
+		padding: 2px 14px;
+		background: center/960px linear-gradient(90deg, #201, #402);
+		text-align: right;
+		box-sizing: border-box;
+		min-height: 18px;
+		
+		& a {
+			padding: 0 2px 0 6px;
+			text-decoration: none;
+			border-left: 1px dashed #a05;
+
+			&:hover {
+				text-decoration: 1px wavy underline;
+			}
+		}
+
+		& .breadcrumb {
+			float: left;
+			background-color: #c06;
+			color: #fab;
+			padding: 1px 1ch;
+			margin: -1px 1ch 0 0;
+			border: none;
+		}
+
+		& .decor {
+			padding: 0 2px 0 6px;
+		}
+	}
+}
+
+main:not(.no-theme) {
+	background: #804;
+	padding: 1em;
+	margin: auto;
+	max-width: 960px;
+	box-sizing: border-box;
+	z-index: -1000;
+}
+
+	
+
+footer:not(.no-theme) {
+	display: grid;
+	grid-template-columns: 1fr max-content;
+	align-items: center;
+	padding: 1em;
+	margin: auto;
+	max-width: 960px;
+	background: linear-gradient(#603, #402);
+	border-top: 2px solid #e07;
+		box-sizing: border-box;
+	
+	.left * {
+		margin: 0;
+		font-size: 16px;
+		line-height: 1;
+		
+	}
+
+
+	.buttons {
+		display: grid;
+		margin: auto;
+		grid-template-columns: repeat(3, 88px);
+
+		grid-auto-rows: 1fr;
+		gap: 0 5px;
+
+		img {
+			image-rendering: pixelated;
+		}
+	}
+}
+
+
+.btn {
+	box-sizing: border-box;
+	width: 88px;
+	height: 31px;
+
+
+	&.placeholder {
+		border: 1px dashed;
+		text-align: center;
+		align-content: center;
+		font-size: 80%;
+		line-height: 0.9;
+	}
+}
 
 .buttons img,
 .buttons {
@@ -108,9 +211,3 @@ code {
 	padding: 1px 2px;
 }
 
-.home {
-	padding: 0em 1em;
-	margin: 1em;
-	display: inline-block;
-	border: 2px solid;
-}

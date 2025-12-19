@@ -16,7 +16,7 @@
 		max-width: 640px;
 		margin: 16px 0 0 auto;
 		background: rgb(25, 16, 27);
-		z-index: -2;
+		z-index: 0;
 	}
 
 		.titlebar {
@@ -92,6 +92,11 @@
 		left: 8px;
 	}
 
+	.friends img {
+		height: 62px;
+		image-rendering: pixelated;
+	}
+
 	</style>
 
 	<noscript><style>
@@ -104,9 +109,17 @@
 </head>
 
 <body>
-	<a href="/" class="home">« home</a>
+	<div class="nav-banner">
+		<nav>
+			<a class="breadcrumb" href="/">root ›</a>
+			<a class="breadcrumb" href="/about.html">about ›</a>
+			
+			<a href="/docs/index.html">user manual</a>
+		</nav>
+	</div>
 
-	<h1>about the unit</h1>
+	<main>
+		<h1>about the unit</h1>
 
 	<section class="about-window">
 		<div class="titlebar">
@@ -159,6 +172,30 @@
 	<a href="https://swiftyshq.neocities.org/fun/quiz/eon"><img src="https://swiftyshq.neocities.org/img/quiz/eon/vee8.png" alt="sylveon" title="timid and extroverted, your unpredictable and anxious nature gives you a sense of humor"></a>
 
 	<script src="/assets/js/lastfm.js"></script>
+
+	<section>
+		<h2>88×31 zone</h2>
+
+		<div class="friends"><a href="https://endoftimee.tech/"><img src="/assets/img/88x31/endoftimee.gif" alt="endoftimee" title="they are very cool! :3"></a></div>
+		
+		<!--TODO: Find more-->
+	</section>
+
+	</main>
+
+	<footer>
+		<section class="left">
+			<p>made with ♥ 2025 – 2026</p>
+			<a href="/sitemap.html">sitemap</a> · <a href="/colophon.html">colophon</a>
+		</section>
+
+		<section class="buttons">
+			<a href="https://c74e.fyi/"><img src="/assets/img/88x31/chicorbeep.png" alt="c74e.fyi" title="beep!! :3"></a>
+			<img src="/assets/img/88x31/button-kills_fascists.png" alt="this machine kills fascists">
+			<img src="/assets/img/88x31/trans.png" alt="transgender pride flag" title="TRANS RIGHTS!!!">
+		</section>
+
+	</footer>
 </body>
 
 </html>

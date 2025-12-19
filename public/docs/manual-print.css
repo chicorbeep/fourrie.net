@@ -9,11 +9,13 @@
     --text-light: #444444;
 }
 
-body:has(#print:checked) {
-
-    .home, .print-hide {
+body {
+    .print-hide {
         display: none;
     }
+}
+
+body:has(#print:checked) {
 
     pride-gradient, .trans, .girl {
         background: none !important;
