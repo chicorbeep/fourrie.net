@@ -9,25 +9,30 @@
 	<link href="/style.css" rel="stylesheet" type="text/css" media="all" title="Default">
 
 	<style>
-		.btn.version {
-			border: 1px solid #ff3e8b;
-			background-color: #641a39;
-			color: #ffdcea;
 
-			display: grid;
-			grid-template-rows: 8px 1fr;
+		a:has(.btn.version) { 
+			text-decoration: none;
+			.btn.version {
+				border: 1px solid #ff3e8b;
+				background-color: #641a39;
+				color: #ffdcea;
 
-			text-align: center;
+				display: grid;
+				grid-template-rows: 8px 1fr;
 
-			& span {
-				font-size: 10px;
-				font-weight: bold;
-			}
+				text-align: center;
 
-			& data {
-				font-size: 16px;
-				align-content: center;
-				letter-spacing: -1px;
+				& span {
+					font-size: 10px;
+					font-weight: bold;
+					
+				}
+
+				& data {
+					font-size: 16px;
+					align-content: center;
+					letter-spacing: -1px;
+				}
 			}
 		}
 	</style>
@@ -69,7 +74,7 @@
 			<img src="/assets/img/88x31/button-kills_fascists.png" alt="this machine kills fascists">
 			<img src="/assets/img/88x31/trans.png" alt="transgender pride flag" title="TRANS RIGHTS!!!">
 
-			<div class="version btn"><span>site version</span><data>0.3.5</data></div>
+			<a href="https://github.com/chicorbeep/chicory.garden/"><div class="version btn"><span>site version</span><data>0.3.6</data></div></a>
 			<div class="btn placeholder">MADE WITH my own paws</div>
 			<div class="btn placeholder">resolution: 960x540+</div>
 		</section>
